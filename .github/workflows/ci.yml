@@ -7,6 +7,7 @@ on:
 
 jobs:
   build:
+<<<<<<< Updated upstream
     name: PR Verify
     runs-on: ubuntu-22.04
 
@@ -23,3 +24,9 @@ jobs:
 
       - name: Test
         run: dotnet test --configuration Release --no-build
+=======
+    name: CI
+    uses: spoloha11/reusable--workflows/.github/workflows/reusable-build.yml@main
+    with:
+      dotnet_version: 9.0.x
+>>>>>>> Stashed changes
